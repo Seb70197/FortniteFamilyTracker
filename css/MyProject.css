@@ -1,0 +1,37 @@
+
+body{
+    background-color: #000000;
+}
+h1{
+    font-size: 150%*;
+    color: #ecb41a;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 500%;
+    height: 50px;
+    width:  100%;
+
+}
+header{
+    background-color: #000000;
+    text-align: center}
+nav{
+    font-variant: small-caps;
+}
+a{
+    font-variant: small-caps;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ecb41a;
+    width: 33%;
+    border: 1px;
+    border-style: dashed;
+    padding: 10px;
+    
+}
+
+head{
+    background-color: #161515;
+    table-layout: auto;
+}
+
