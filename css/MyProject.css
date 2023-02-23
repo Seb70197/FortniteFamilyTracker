@@ -1,11 +1,32 @@
-
+@font-face {
+    font-family: fortnite;
+    src: url(../font/fortnite.otf)format('opentype');
+}
 body{
     background-color: #000000;
+    font: #ecb41a;
+    font-size:20px;
+    font-weight: lighter;
+    color: #ecb41a;
+    font-family:fortnite  ;
 }
+.Player{
+
+    margin: auto;
+    text-align: center;
+    width: auto;  
+}
+div{
+    margin-top: 15px;
+    padding: 20px;
+    width: 10%;
+    display: inline-block;
+}
+
 h1{
     font-size: 150%*;
     color: #ecb41a;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: fortnite;
     text-align: center;
     font-size: 500%;
     height: 50px;
@@ -21,7 +42,7 @@ nav{
 a{
     font-variant: small-caps;
     display: block;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: fortnite;
     color: #ecb41a;
     width: 33%;
     border: 1px;
