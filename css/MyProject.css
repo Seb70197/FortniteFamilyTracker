@@ -2,6 +2,94 @@
     font-family: fortnite;
     src: url(../font/fortnite.otf)format('opentype');
 }
+header{
+    display: flex;
+    border-top: 10px solid;
+    
+    height: 200px;
+    background-color: #000000;
+    border-radius: 3px;
+    margin-bottom: 21px;
+    
+}
+header a{
+    display: inline-block;
+    margin-top: 10px;
+    overflow: hidden;
+    clear: both;
+    white-space: nowrap;
+    font-size: 30px;
+    color: #ecb41a;
+    padding: 5px;
+    text-decoration: none;
+    margin: 10px;
+    border-left: #ecb41a solid 5px ;
+    border-radius: 3px;
+    
+}
+header a:hover{
+    transition: ease-in-out all .4s;
+    -webkit-transition: ease-in-out all .4s;
+    color: #fae204;
+    border-left: #fae204 solid 5px ;
+}
+.header_title{
+    display: flex;
+    padding: 5px 5px 5px 0px;
+    margin-top: 0;
+    width: auto;
+    text-align: center;
+    
+}
+.header_image{
+    display: flex;
+}
+.header_name {
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 100px;
+    width: auto;
+    text-align: center;
+    color: #000000;
+    -webkit-text-stroke: 2px #ffffff ;
+    overflow: hidden;
+    clear: both;
+    white-space: nowrap;
+}
+.header_nav{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    height: 60px;
+    
+    
+}
+.header_player{
+    margin-top: 15px;
+    
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+    padding-left: 40px;
+    color: #000000;
+    -webkit-text-stroke: 1px #ffffff ;
+    font-size: 30px;
+
+}
+.header_squad{
+    
+    display: inline-block;
+    width: 15%;
+    font-size: 70px;
+    padding-right: 10px;
+    color: #000000;
+    -webkit-text-stroke: 2px #ffffff ;
+    text-align: center;
+    
+    transform: translateY(-70%);
+    
+}
+
 body{
     background-color: #000000;
     font: #ecb41a;
@@ -11,48 +99,35 @@ body{
     font-family:fortnite  ;
 }
 .Player{
-
-    margin: auto;
-    text-align: center;
-    width: auto;  
+    background-color: #160e41;
+    width: 100%;
+    border-style: solid;
+    border-color: white;
+    border-radius: 3px;
+    height: auto;
+    padding-top: auto;    ;
+    text-align: left;
 }
-div{
-    margin-top: 15px;
-    padding: 20px;
-    width: 10%;
+.Player img{
+    width: 50%;
+}
+
+
+.line{
     display: inline-block;
-}
+ 
+    position: relative;
+    width: 50px;
+    height: 150px;
 
-h1{
-    font-size: 150%*;
-    color: #ecb41a;
-    font-family: fortnite;
-    text-align: center;
-    font-size: 500%;
-    height: 50px;
-    width:  100%;
-
-}
-header{
-    background-color: #000000;
-    text-align: center}
-nav{
-    font-variant: small-caps;
-}
-a{
-    font-variant: small-caps;
-    display: block;
-    font-family: fortnite;
-    color: #ecb41a;
-    width: 33%;
-    border: 1px;
-    border-style: dashed;
-    padding: 10px;
+    background-color: #ffffff;
+    -webkit-clip-path: polygon(100% 100%,100% 100%,54% 30%,56% 67.5%,0% 0%);
     
-}
+    
 
-head{
-    background-color: #161515;
-    table-layout: auto;
-}
+
+    }
+
+
+
 
