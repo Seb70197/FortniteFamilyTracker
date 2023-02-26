@@ -18,7 +18,7 @@ header a{
     overflow: hidden;
     clear: both;
     white-space: nowrap;
-    font-size: 25px;
+    font-size: 1.1vw;
     color: #ecb41a;
     padding: 5px;
     text-decoration: none;
@@ -40,6 +40,7 @@ header a:hover{
     width: 55%;
     float: left;
     height: 100%;
+    
 
     
 }
@@ -53,10 +54,10 @@ header a:hover{
     position:fixed;
     width: 35%;
     padding-left: 5px;
-    font-size: 70px;
+    font-size: 5vw;
     color: #000000;
     -webkit-text-stroke: 2px #ffffff ;
-    
+    text-size-adjust: auto;
 
 }
 .header_nav{
@@ -75,14 +76,14 @@ header a:hover{
     padding-left: 40px;
     color: #000000;
     -webkit-text-stroke: 1px #ffffff ;
-    font-size: 30px;
+    font-size: 2vw;
 
 }
 .header_squad{
     
     display: inline-block;
     width: 15%;
-    font-size: 70px;
+    font-size: 3vw;
     padding-right: 10px;
     color: #000000;
     -webkit-text-stroke: 2px #ffffff ;
@@ -115,21 +116,6 @@ body{
     width: 50%;
 }
 
-
-.line{
-    display: inline-block;
- 
-    position: relative;
-    width: 50px;
-    height: 150px;
-
-    background-color: #ffffff;
-    -webkit-clip-path: polygon(100% 100%,100% 100%,54% 30%,56% 67.5%,0% 0%);
-    
-    
-
-
-    }
 
 
 
