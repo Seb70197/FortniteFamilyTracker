@@ -4,11 +4,11 @@
 }
 header{
     display: inline-block;
-    border-top: 10px solid;
-    
+    border-top: 3px solid;
+    width: 100%;
     height: auto;
     background-color: #000000;
-    border-radius: 3px;
+    
     margin-bottom: 21px;
     
 }
@@ -23,7 +23,7 @@ header a{
     padding: 5px;
     text-decoration: none;
     margin: 10px;
-    border-left: #ecb41a solid 5px ;
+    border-left: #ecb41a solid 2px ;
     border-radius: 3px;
     
 }
@@ -69,32 +69,58 @@ header a:hover{
 }
 .header_player{
     margin-top: 15px;
-    
     width: 10%;
     display: inline-block;
-    text-align: center;
     padding-left: 40px;
     color: #000000;
     -webkit-text-stroke: 1px #ffffff ;
-    font-size: 2vw;
-
+    font-size: 1vw;
+    text-size-adjust: auto;
+}
+.player_details{
+    display: inline-block;
+    width: 80%;
+    height: auto;
+    color: #000000;
+    -webkit-text-stroke: 1px #ffffff;
+    text-align: center;
+    float: right;
 }
 .header_squad{
-    
     display: inline-block;
-    width: 15%;
+    width: 20%;
     font-size: 3vw;
-    padding-right: 10px;
     color: #000000;
     -webkit-text-stroke: 2px #ffffff ;
     text-align: center;
     background-color: #ffffff;
-    transform: translateY(-70%);
-    height: auto;
-    margin: auto;
-}
+    text-size-adjust: auto;
 
+
+}
+.header_squad p{
+    display:inline-block;
+
+    
+    
+}
+.Player{
+    display: inline-block;
+    background-color: #160e41;
+    border-style: solid;
+    border-color: white;
+    border-radius: 3px;
+    width: 80%;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.Player img{
+    display: inline-block;
+    width: 100%;
+}
 body{
+    display: inline-block;
     background-color: #000000;
     font: #ecb41a;
     font-size:20px;
@@ -102,20 +128,6 @@ body{
     color: #ecb41a;
     font-family:fortnite  ;
 }
-.Player{
-    background-color: #160e41;
-    width: 100%;
-    border-style: solid;
-    border-color: white;
-    border-radius: 3px;
-    height: auto;
-    padding-top: auto;    ;
-    text-align: left;
-}
-.Player img{
-    width: 50%;
-}
-
 
 
 
