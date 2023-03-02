@@ -43,25 +43,20 @@ header a:hover{
     width: 40%;
     float: left;
     height: 100%;
-    
-
-    
 }
 .header_image{
     display: inline-block;
     width: 40%;
-    
 }
 .header_name {
     display: inline-block;
-    position:fixed;
+    position: absolute;
     width: 35%;
     padding-left: 5px;
     font-size: 5vw;
     color: #000000;
     -webkit-text-stroke: 0.8px #ffffff ;
     text-size-adjust: auto;
-
 }
 .header_nav{
     display: inline-block;
@@ -71,7 +66,6 @@ header a:hover{
     float: right;
 }
 .header_player{
-
     width: 10%;
     display: inline-table;
     color: #000000;
@@ -79,20 +73,13 @@ header a:hover{
     text-size-adjust: auto;
     padding: 2%
 }
-
-
 .player_details{
     display: inline-block;
     width: 80%;
     color: #000000;
     -webkit-text-stroke: 0.5px #ffffff;
     height: auto;
-
     text-align: center;
-
-
-
-
 }
 .header_squad{
     width: 20%;
@@ -101,13 +88,7 @@ header a:hover{
     -webkit-text-stroke: 0.5px #ffffff ;
     background-color: #ffffff;
     text-size-adjust: auto;
-
-}
-.header_squad p{
-    
-    align-items: center;
-
-
+    text-align: center;
 }
 
 .Player{
@@ -120,25 +101,65 @@ header a:hover{
     height: fit-content;
     margin-left:15% ;
     vertical-align: middle;
-
-
-    
-    
 }
 .Player img{
     display: inline-block;
     width: 80%;
 }
 body{
-    display: inline-block;
     background-color: #000000;
     font: #ecb41a;
     height: 100%;
-    font-weight: lighter;
+
     color: #ecb41a;
     font-family:fortnite  ;
 }
+.main-stats-section{
+    text-align: center;
+}
+.main-stats-title{
+    text-align: center;
+    font-size: 3vw;
+    color: #000000;
+    -webkit-text-stroke: 0.5px #ffffff ;   
+}
 
+.main-stats-block{
+    flex: 1;
+    width: 100%;
+    
+
+}
+.main-stats-squad{
+    display: inline-block;
+    width: 100%;
+
+}
+.main-stats-container{
+    display: inline-table;
+    margin: 2%;
+    height: 50px;
+    width: 190px;
+}
+.main-stats-subtitle{
+    width: 45%;
+    display: table-cell;
+    background-color: #41a889;
+    color: #ffffff;
+    text-align: center;
+    font-size: 2vw;
+    
+    vertical-align: middle;
+}
+.main-stats-value{
+    width: 55%;
+    display: table-cell;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 2vw;
+    
+    vertical-align: middle;
+}
 
 
 
