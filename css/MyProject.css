@@ -64,6 +64,7 @@ header a:hover{
     height: 60px;
     margin: 0;
     float: right;
+    text-align: right;
 }
 .header_player{
     width: 10%;
@@ -80,6 +81,7 @@ header a:hover{
     -webkit-text-stroke: 0.5px #ffffff;
     height: auto;
     text-align: center;
+    text-size-adjust: auto;
 }
 .header_squad{
     width: 20%;
@@ -116,12 +118,13 @@ body{
 }
 .main-stats-section{
     text-align: center;
+
 }
 .main-stats-title{
     text-align: center;
-    font-size: 3vw;
+    font-size: 3em;
     color: #000000;
-    -webkit-text-stroke: 0.5px #ffffff ;   
+    -webkit-text-stroke: 0.8px #ffffff ;   
 }
 
 .main-stats-block{
@@ -137,29 +140,107 @@ body{
 }
 .main-stats-container{
     display: inline-table;
-    margin: 2%;
-    height: 50px;
-    width: 190px;
+    margin: 1%;
+    height: 5em;
+    width: 400px;
+    
 }
 .main-stats-subtitle{
-    width: 45%;
+    width: 40%;
     display: table-cell;
     background-color: #41a889;
     color: #ffffff;
     text-align: center;
-    font-size: 2vw;
-    
+    font-size: 3em;
+    text-size-adjust: auto;
     vertical-align: middle;
+    /*clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);*/
+
+    
 }
 .main-stats-value{
-    width: 55%;
+    width: 60%;
     display: table-cell;
     background-color: #ffffff;
     color: #000000;
-    font-size: 2vw;
-    
+    font-size: 3em;
+    text-size-adjust: auto;
     vertical-align: middle;
-}
+    transform-origin: top ;
+    transform: skewX(-5deg);
 
+    /*clip-path: polygon(10% 0, 100% 0, 100% 100%, 2.8% 100%);*/
+
+}
+.squad-performance{
+    text-align: center;
+
+}
+.performance-container{
+    display: inline-block;
+    width: 17%;
+    margin: 2%;
+
+}
+.performance-header{
+    text-align: center;
+    width: 100%;
+    
+}
+.performance-header-title{
+    display: table-cell;
+    width: 80%;
+    background-color: #8d52b5;
+    color: #ffffff;
+    width: 230px;
+    font-size: 1.2vw;
+    text-size-adjust: auto;
+    vertical-align: middle;
+    height: 1.8em;
+}
+.performance-header-stats{
+    display: table-cell;
+    width: 140px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1.2vw;
+    text-size-adjust: auto;
+    vertical-align: middle;
+    transform-origin: top ;
+    transform: skewX(-5deg);
+    height: 1.8em;
+}
+.performance-stats-container{
+    display: inline-table;
+    text-align: left;
+    margin-top: 10px;
+
+
+}
+.block-stats{
+    display: inline-block;
+    width: 46%;
+    font-size: 1.2vw;
+    height: 3em;
+    margin: 3px;
+    text-align: left;
+    background-color: #232323;
+    border-radius: 5px;
+
+}
+.stats-title{
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 50%;
+    -webkit-text-stroke: 0.8px #ffffff;
+    color: #765909;
+}
+.stats-data{
+    text-align: right;
+    margin-right: 5px;
+    font-size: 1.5vw;
+    color: #dfd9d9;
+    -webkit-text-stroke: 1px #000000;
+}
 
 
