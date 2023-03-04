@@ -141,7 +141,7 @@ body{
 .main-stats-container{
     display: inline-table;
     margin: 1%;
-    height: 5em;
+    height: 3em;
     width: 400px;
     
 }
@@ -151,7 +151,7 @@ body{
     background-color: #41a889;
     color: #ffffff;
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
     text-size-adjust: auto;
     vertical-align: middle;
     /*clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);*/
@@ -163,7 +163,7 @@ body{
     display: table-cell;
     background-color: #ffffff;
     color: #000000;
-    font-size: 3em;
+    font-size: 2em;
     text-size-adjust: auto;
     vertical-align: middle;
     transform-origin: top ;
@@ -174,11 +174,12 @@ body{
 }
 .squad-performance{
     text-align: center;
+    width: 100%;
 
 }
 .performance-container{
     display: inline-block;
-    width: 17%;
+    width: 20%;
     margin: 2%;
 
 }
@@ -193,7 +194,7 @@ body{
     background-color: #8d52b5;
     color: #ffffff;
     width: 230px;
-    font-size: 1.2vw;
+    font-size: 1.2em;
     text-size-adjust: auto;
     vertical-align: middle;
     height: 1.8em;
@@ -203,7 +204,7 @@ body{
     width: 140px;
     background-color: #ffffff;
     color: #000000;
-    font-size: 1.2vw;
+    font-size: 1.2em;
     text-size-adjust: auto;
     vertical-align: middle;
     transform-origin: top ;
@@ -219,13 +220,13 @@ body{
 }
 .block-stats{
     display: inline-block;
-    width: 46%;
+    width: 47%;
     font-size: 1.2vw;
-    height: 3em;
+
     margin: 3px;
     text-align: left;
     background-color: #232323;
-    border-radius: 5px;
+    border-radius: 2px;
 
 }
 .stats-title{
@@ -234,13 +235,18 @@ body{
     height: 50%;
     -webkit-text-stroke: 0.8px #ffffff;
     color: #765909;
+    text-size-adjust: auto;
+
+    
 }
 .stats-data{
     text-align: right;
     margin-right: 5px;
     font-size: 1.5vw;
     color: #dfd9d9;
-    -webkit-text-stroke: 1px #000000;
+    text-size-adjust: auto;
+
+    
 }
 
 
