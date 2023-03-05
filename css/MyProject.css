@@ -179,15 +179,15 @@ body{
 }
 .performance-container{
     display: inline-block;
-    width: 40%;
-    margin: 1.5%;
+
+    margin: 2%;
 
 
 }
 .performance-header{
     
-    margin-top: 5px ;
-    margin-left: 5px;
+    width: 18em;
+    
     
     
 }
@@ -196,7 +196,7 @@ body{
     width: 55%;
     background-color: #8d52b5;
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 2em;
     vertical-align: middle;
 
 }
@@ -205,7 +205,7 @@ body{
     width: 25%;
     background-color: #ffffff;
     color: #000000;
-    font-size: 1.5em;
+    font-size: 2em;
     vertical-align: middle;
     transform-origin: top ;
     transform: skewX(-5deg);
@@ -213,9 +213,8 @@ body{
 }
 .performance-stats-container{
     display: inline-block;
-    text-align: left;
     margin-top: 10px;
-    width: 15em;
+    width: 18em;
     background-color: #232323;
     border-radius: 2px;
 
