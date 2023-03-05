@@ -179,72 +179,78 @@ body{
 }
 .performance-container{
     display: inline-block;
-    width: 20%;
-    margin: 2%;
+    width: 40%;
+    margin: 1.5%;
+
 
 }
 .performance-header{
-    text-align: center;
-    width: 100%;
+    
+    margin-top: 5px ;
+    margin-left: 5px;
+    
     
 }
 .performance-header-title{
     display: table-cell;
-    width: 80%;
+    width: 55%;
     background-color: #8d52b5;
     color: #ffffff;
-    width: 230px;
-    font-size: 1.2em;
-    text-size-adjust: auto;
+    font-size: 1.5em;
     vertical-align: middle;
-    height: 1.8em;
+
 }
 .performance-header-stats{
     display: table-cell;
-    width: 140px;
+    width: 25%;
     background-color: #ffffff;
     color: #000000;
-    font-size: 1.2em;
-    text-size-adjust: auto;
+    font-size: 1.5em;
     vertical-align: middle;
     transform-origin: top ;
     transform: skewX(-5deg);
-    height: 1.8em;
+
 }
 .performance-stats-container{
-    display: inline-table;
+    display: inline-block;
     text-align: left;
     margin-top: 10px;
+    width: 15em;
+    background-color: #232323;
+    border-radius: 2px;
 
 
 }
 .block-stats{
     display: inline-block;
-    width: 47%;
-    font-size: 1.2vw;
-
+    width: 40%;
+    font-size: 1.5em;
     margin: 3px;
     text-align: left;
-    background-color: #232323;
+    background-color: #434141;
     border-radius: 2px;
+    
 
 }
 .stats-title{
     margin-top: 5px;
+    font-size: 0.5em;
     margin-left: 5px;
     height: 50%;
-    -webkit-text-stroke: 0.8px #ffffff;
-    color: #765909;
+    color: #ecb41a;
     text-size-adjust: auto;
+    border-bottom: 1px solid ;
+    
 
     
 }
 .stats-data{
     text-align: right;
     margin-right: 5px;
-    font-size: 1.5vw;
+    margin-top: 5px;
     color: #dfd9d9;
-    text-size-adjust: auto;
+    
+    height: 25px;
 
     
 }
