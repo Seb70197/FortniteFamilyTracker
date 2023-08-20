@@ -1,21 +1,47 @@
 <!DOCTYPE html>
+
 <html lang="en">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/MyProject.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://apis.google.com/js/api.js"></script>
+        <script src="JS/js.js"> </script>
+        
+
     </head>
+    
+
     <header>
-        <div class="header_title">
+        
+        <div class="header_title" id="test">
             <img class="header_image" src="images/MainScreen.png">
             <div class="header_name">FORTNITE FAMILY TRACKER</div>
         </div>
-
+        <script>
+            function myFunction() {
+            var x = document.getElementById("links");
+            if (x.style.display === "block") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "block";
+            }
+        }
+        </script>
         <nav class="header_nav">
-            <a href="https://lookerstudio.google.com/reporting/97afe7f9-0ade-4bca-99ca-65252b588207/page/cnHsC" target="_blank">Player Performance</a>
-            <a href="https://lookerstudio.google.com/reporting/97afe7f9-0ade-4bca-99ca-65252b588207/page/p_x589v29avc" target="_blank">Squad Performance</a>
-            <a href="https://lookerstudio.google.com/reporting/97afe7f9-0ade-4bca-99ca-65252b588207/page/p_crj7p856uc" target="_blank">Historical Statistics</a>
-            <a href="https://fortnitetracker.com/" target="_blank">Frotnite Tracker</a>
+              <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()"> 
+                <i class="fa fa-bars"></i></a>
+            <div id="links" > 
+                <a href="https://lookerstudio.google.com/reporting/97afe7f9-0ade-4bca-99ca-65252b588207/page/cnHsC" target="_blank">Player Performance</a>
+                <a href="https://lookerstudio.google.com/reporting/97afe7f9-0ade-4bca-99ca-65252b588207/page/p_x589v29avc" target="_blank">Squad Performance</a>
+                <a href="https://lookerstudio.google.com/reporting/97afe7f9-0ade-4bca-99ca-65252b588207/page/p_crj7p856uc" target="_blank">Historical Statistics</a>
+                <a href="https://fortnitetracker.com/" target="_blank">Frotnite Tracker</a>
+            </div>
+            
         </nav>
     </header>
     <br>
@@ -249,10 +275,14 @@
                     
                 </div>
             </section>        
+            <div id="tbl">
 
+                <table>
+                    <caption>Data Fortnite</caption>
+                </table>
+
+            </div>
         
- 
-
         <h1>Link to Statistics</h1>
         <a href="https://lookerstudio.google.com/reporting/97afe7f9-0ade-4bca-99ca-65252b588207/page/cnHsC" target="_blank">Player Performance</a>
         <a href="https://lookerstudio.google.com/reporting/97afe7f9-0ade-4bca-99ca-65252b588207/page/p_x589v29avc" target="_blank">Squad Performance</a>
@@ -263,11 +293,19 @@
 
         </section>  
         <span>test</span>
+        
+        <button onclick="document.getElementById('stuff').innerHTML = 'Clicked first button';">first button</button>
+        <button onclick="closeMe()">Second button</button>
+        <p id="stuff">nothing</p>
     </body>
+    <div class = "col-sm-2 col-lg-4">test</div>
     <footer>
         <a href="https://www.facebook.com" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="test" width="1%">
         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Insta" width="1%">
         </a>
+
     </footer>
+
+
 </html>
