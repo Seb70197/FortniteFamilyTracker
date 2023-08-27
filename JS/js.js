@@ -59,10 +59,158 @@ const fetcheddata = () => {
     calculateAndDisplaySum('duo', 'PerfDuo');
     calculateAndDisplaySum('trio', 'PerfTrio');
     calculateAndDisplaySum('squad', 'PerfSquad');
+
+    function calculateAndDisplaySumTop1(filterCondition, elementId) {
+        const filteredRows = loadedData2.filter(row => row[0] === filterCondition);
+        const sumOfFilteredColumn = filteredRows.reduce((sum, row) => sum + parseInt(row[21], 10), 0);
+        console.log(sumOfFilteredColumn.toLocaleString());
+        document.getElementById(elementId).innerHTML = sumOfFilteredColumn.toLocaleString();
+
+    }
+    
+    calculateAndDisplaySumTop1('solo', 'Top1Solo');
+    calculateAndDisplaySumTop1('duo', 'Top1Duo');
+    calculateAndDisplaySumTop1('trio', 'Top1Trio');
+    calculateAndDisplaySumTop1('squad', 'Top1Squad');
+
+    function calculateAndDisplaySumKills(filterCondition, elementId) {
+        const filteredRows = loadedData2.filter(row => row[0] === filterCondition);
+        const sumOfFilteredColumn = filteredRows.reduce((sum, row) => sum + parseFloat(row[31], 10), 0);
+        console.log(sumOfFilteredColumn.toLocaleString());
+        document.getElementById(elementId).innerHTML = sumOfFilteredColumn.toLocaleString();
+
+    }
+    
+    calculateAndDisplaySumKills('solo', 'KillsSolo');
+    calculateAndDisplaySumKills('duo', 'KillsDuo');
+    calculateAndDisplaySumKills('trio', 'KillsTrio');
+    calculateAndDisplaySumKills('squad', 'KillsSquad');
+
+    function calculateAndDisplaySumWinRatio(filterCondition, elementId) {
+        const filteredRows = loadedData2.filter(row => row[0] === filterCondition);
+        const sumOfFilteredColumn = filteredRows.reduce((sum, row) => {
+            const winRatio = row[29].replace(',','.');
+            return sum + parseFloat(winRatio);
+        },0)
+        console.log(sumOfFilteredColumn.toLocaleString());
+        document.getElementById(elementId).innerHTML = `${((sumOfFilteredColumn/(loadedData2.filter(row => row[0] === filterCondition)).length)*100).toFixed(2)}%`;
+
+    }
+    
+    calculateAndDisplaySumWinRatio('solo', 'WinSolo');
+    calculateAndDisplaySumWinRatio('duo', 'WinDuo');
+    calculateAndDisplaySumWinRatio('trio', 'WinTrio');
+    calculateAndDisplaySumWinRatio('squad', 'WinSquad');
+
+
+    function calculateAndDisplaySumKillDeath(filterCondition, elementId) {
+        const filteredRows = loadedData2.filter(row => row[0] === filterCondition);
+        const sumOfFilteredColumn = filteredRows.reduce((sum, row) => {
+            const winRatio = row[28].replace(',','.');
+            return sum + parseFloat(winRatio);
+        },0)
+        console.log(sumOfFilteredColumn.toLocaleString());
+        document.getElementById(elementId).innerHTML = (sumOfFilteredColumn/(loadedData2.filter(row => row[0] === filterCondition)).length).toFixed(2);
+
+    }
+    
+    calculateAndDisplaySumKillDeath('solo', 'killSolo');
+    calculateAndDisplaySumKillDeath('duo', 'killDuo');
+    calculateAndDisplaySumKillDeath('trio', 'killTrio');
+    calculateAndDisplaySumKillDeath('squad', 'killSquad');
+
+    function calculateAndDisplaySumMinPlayed(filterCondition, elementId) {
+        const filteredRows = loadedData2.filter(row => row[0] === filterCondition);
+        const sumOfFilteredColumn = filteredRows.reduce((sum, row) => sum + parseFloat(row[32], 10), 0);
+        console.log(sumOfFilteredColumn.toLocaleString());
+        document.getElementById(elementId).innerHTML = sumOfFilteredColumn.toLocaleString();
+
+    }
+    
+    calculateAndDisplaySumMinPlayed('solo', 'MinSolo');
+    calculateAndDisplaySumMinPlayed('duo', 'MinDuo');
+    calculateAndDisplaySumMinPlayed('trio', 'MinTrio');
+    calculateAndDisplaySumMinPlayed('squad', 'MinSquad');
+
+    function calculateAndDisplaySumKillMin(filterCondition, elementId) {
+        const filteredRows = loadedData2.filter(row => row[0] === filterCondition);
+        const sumOfFilteredColumn = filteredRows.reduce((sum, row) => {
+            const winRatio = row[33].replace(',','.');
+            return sum + parseFloat(winRatio);
+        },0)
+        console.log(sumOfFilteredColumn.toLocaleString());
+        document.getElementById(elementId).innerHTML = (sumOfFilteredColumn/(loadedData2.filter(row => row[0] === filterCondition)).length).toFixed(2);
+
+    }
+    
+    calculateAndDisplaySumKillMin('solo', 'KillMinSolo');
+    calculateAndDisplaySumKillMin('duo', 'KillMinDuo');
+    calculateAndDisplaySumKillMin('trio', 'KillMinTrio');
+    calculateAndDisplaySumKillMin('squad', 'KillMinSquad');
+
+    function calculateAndDisplaySumScoreGame(filterCondition, elementId) {
+        const filteredRows = loadedData2.filter(row => row[0] === filterCondition);
+        const sumOfFilteredColumn = filteredRows.reduce((sum, row) => {
+            const winRatio = row[36].replace(',','.');
+            return sum + parseFloat(winRatio);
+        },0)
+        console.log(sumOfFilteredColumn.toLocaleString());
+        document.getElementById(elementId).innerHTML = (sumOfFilteredColumn/(loadedData2.filter(row => row[0] === filterCondition)).length).toFixed(2);;
+
+    }
+    
+    calculateAndDisplaySumScoreGame('solo', 'ScoreGameSolo');
+    calculateAndDisplaySumScoreGame('duo', 'ScoreGameDuo');
+    calculateAndDisplaySumScoreGame('trio', 'ScoreGameTrio');
+    calculateAndDisplaySumScoreGame('squad', 'ScoreGameSquad');
+
+    function calculateAndDisplaySumKillGame(filterCondition, elementId) {
+        const filteredRows = loadedData2.filter(row => row[0] === filterCondition);
+        const sumOfFilteredColumn = filteredRows.reduce((sum, row) => {
+            const winRatio = row[34].replace(',','.');
+            return sum + parseFloat(winRatio);
+        },0)
+        console.log(sumOfFilteredColumn.toLocaleString());
+        document.getElementById(elementId).innerHTML = (sumOfFilteredColumn/(loadedData2.filter(row => row[0] === filterCondition)).length).toFixed(2);
+
+    }
+    
+    calculateAndDisplaySumKillGame('solo', 'KillGameSolo');
+    calculateAndDisplaySumKillGame('duo', 'KillGameDuo');
+    calculateAndDisplaySumKillGame('trio', 'KillGameTrio');
+    calculateAndDisplaySumKillGame('squad', 'KillGameSquad');
+
+    function calculateAndDisplaySumTest(filterCondition1, filterCondition2) {
+        const filteredRows = loadedData2.filter(row => row[1] === filterCondition1);
+        const filteredRows2 = filteredRows.filter(row => row[0] === filterCondition2);
+        const sumOfFilteredColumn = filteredRows2.reduce((sum, row) => {
+            const winRatio = row[34].replace(',','.');
+            return sum + parseFloat(winRatio);
+        },0)
+        console.log(sumOfFilteredColumn);
+
+         
+
+    }    
+    calculateAndDisplaySumTest('CIL20-24', 'solo')
+}
+function addOption(selectBox, text, value) {
+    var optn = document.createElement("OPTION");
+    optn.text = text;
+    optn.value = value;
+    selectBox.options.add(optn);
+    
+
 }
 
+function addOption_list(){
+    var player = new Array("CIL20-24", "Seb24Stutt","Cedrike");
+    for (var i=0; i<player.length;++i){
+        addOption(document.drop_list.Player_list, player[i], player[i]);
+    }
 
 
+}
 
 
 const start2 =() => {
@@ -76,7 +224,7 @@ const start2 =() => {
         });
     }).then((response) => {
         loadedData2 = response.result.values;
-        
+        console.log(loadedData2)
         fetcheddata();
 
     }).catch((err) => {
