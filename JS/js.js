@@ -193,25 +193,37 @@ const fetcheddata = () => {
 
     }    
     calculateAndDisplaySumTest('CIL20-24', 'solo')
-}
-function addOption(selectBox, text, value) {
-    var optn = document.createElement("OPTION");
-    optn.text = text;
-    optn.value = value;
-    selectBox.options.add(optn);
-    
 
-}
+    function calculateAndDisplaySumKillsPlayers(filterCondition, elementId) {
+        const filteredRows = loadedData2.filter(row => row[1] === filterCondition);
+        const sumOfFilteredColumn = filteredRows.reduce((sum, row) => sum + parseFloat(row[31], 10), 0);
+        console.log(sumOfFilteredColumn.toLocaleString());
+        document.getElementById(elementId).innerHTML = sumOfFilteredColumn.toLocaleString();
 
-function addOption_list(){
-    var player = new Array("CIL20-24", "Seb24Stutt","Cedrike");
-    for (var i=0; i<player.length;++i){
-        addOption(document.drop_list.Player_list, player[i], player[i]);
     }
+    
+    calculateAndDisplaySumKillsPlayers('Seb24stutt', 'KillsSeb');
+    calculateAndDisplaySumKillsPlayers('cedrike', 'KillsCedric');
+    calculateAndDisplaySumKillsPlayers('CIL20-24', 'KillsCil');
+    calculateAndDisplaySumKillsPlayers('Wayard12', 'KillsMath');
+    calculateAndDisplaySumKillsPlayers('Thomas484848', 'KillsThomas');
+    calculateAndDisplaySumKillsPlayers('Cre95360', 'KillsDams');
 
+    function calculateAndDisplaySumTop1Players(filterCondition, elementId) {
+        const filteredRows = loadedData2.filter(row => row[1] === filterCondition);
+        const sumOfFilteredColumn = filteredRows.reduce((sum, row) => sum + parseFloat(row[21], 10), 0);
+        console.log(sumOfFilteredColumn.toLocaleString());
+        document.getElementById(elementId).innerHTML = sumOfFilteredColumn.toLocaleString();
 
+    }
+    
+    calculateAndDisplaySumTop1Players('Seb24stutt', 'Top1Seb');
+    calculateAndDisplaySumTop1Players('cedrike', 'Top1Cedric');
+    calculateAndDisplaySumTop1Players('CIL20-24', 'Top1Cil');
+    calculateAndDisplaySumTop1Players('Wayard12', 'Top1Math');
+    calculateAndDisplaySumTop1Players('Thomas484848', 'Top1Thomas');
+    calculateAndDisplaySumTop1Players('Cre95360', 'Top1Dams');
 }
-
 
 const start2 =() => {
     gapi.client.init({
